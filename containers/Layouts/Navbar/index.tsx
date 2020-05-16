@@ -109,7 +109,7 @@ const NavLinkMobile = styled.div`
   flex-basis: 0;
   align-items: center;
   justify-content: center;
-  height: 65px;
+  height: 90px;
 
   border-top: 1px solid #e8e8e8;
 
