@@ -49,7 +49,7 @@ const Wrapper = styled.section`
 // This is the default header of the website
 function IndexPresentation() {
   return (
-    <Wrapper>
+    <Wrapper aria-hidden="true">
       <span></span>
       <span></span>
       <span></span>

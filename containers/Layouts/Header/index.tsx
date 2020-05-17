@@ -22,6 +22,7 @@ function Header({
           key="viewport"
         />
         <meta name="description" content={description} />
+        <meta name="robots" content="noindex" />
         <title>{title}</title>
         <link
           rel="icon"

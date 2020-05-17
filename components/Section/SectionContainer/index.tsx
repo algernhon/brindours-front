@@ -8,7 +8,6 @@ interface PropsType {
 
 const Container = styled.section`
   margin-bottom: ${({ theme }) => theme.sizes.separator};
-  text-align: center;
 `;
 
 function SectionContainer({ children, className }: PropsType) {

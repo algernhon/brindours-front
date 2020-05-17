@@ -5,7 +5,6 @@ import Section from "components/Section";
 const Center = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   margin: auto;
 
   @media (min-width: 960px) {
@@ -14,35 +13,19 @@ const Center = styled.div`
   }
 `;
 
-const Title = styled.h2`
-  margin-bottom: 60px;
-`;
-
 const Partner = styled.div`
   opacity: 0.6;
   transition: opacity 1s ease 0s;
   padding: 20px 0%;
+
+  text-align: center;
+
   & :hover {
     opacity: 1;
   }
 
   @media (min-width: 960px) {
     padding: 0;
-  }
-`;
-
-const IconCircle = styled.div`
-  border: 2px solid ${({ theme }) => theme.colors.pinkDark};
-  display: inline-block;
-  border-radius: 40px;
-  padding: 0.4em 0.6em;
-  height: 80px;
-  width: 80px;
-
-  img {
-    padding-top: 12px;
-    width: 50px;
-    user-select: none;
   }
 `;
 

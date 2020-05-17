@@ -32,6 +32,7 @@ const Wrapper = styled.div<PropsType & WrapperType>`
 
   display: flex;
   align-items: center;
+  position: relative;
 
   & > h1,
   h2,
@@ -68,6 +69,8 @@ const positions = {
     @media (min-width: 960px) {
       background-position: 45% 105%;
       background-size: 40%;
+      justify-content: center;
+      align-items: flex-start;
     }
   `,
   left: css`

@@ -11,7 +11,7 @@ export interface PropsType {
 type FlexboxType = Required<Pick<PropsType, "position">>;
 
 const Wrapper = styled.div`
-  display: inline-block;
+  /* display: inline-block; */
   margin-bottom: 60px;
 `;
 
