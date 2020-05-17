@@ -109,9 +109,9 @@ const NavLinkMobile = styled.div`
   flex-basis: 0;
   align-items: center;
   justify-content: center;
-  height: 90px;
+  height: 70px;
 
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #272727;
 
   & :nth-child(1) {
     border-radius: 30px 0 0 0;
@@ -123,7 +123,7 @@ const NavLinkMobile = styled.div`
 `;
 
 const LinkMobile = styled.a`
-  font-size: 12px;
+  font-size: 11px;
   color: black;
   transition: all 0.4s ease 0s;
   opacity: 0.8;
@@ -172,14 +172,14 @@ function NavbarMain() {
           <NavListMobile>
             <NavLinkMobile>
               <LinkMobile href="#">
-                <img height="21px" src="svg/baby-light.svg" alt="Concept" />
+                <img height="20px" src="svg/baby-light.svg" alt="Concept" />
                 <p>Concept</p>
               </LinkMobile>
             </NavLinkMobile>
             <NavLinkMobile>
               <LinkMobile href="#">
                 <img
-                  height="21px"
+                  height="20px"
                   src="svg/hands-helping-light.svg"
                   alt="L'équipe"
                 />
@@ -188,14 +188,14 @@ function NavbarMain() {
             </NavLinkMobile>
             <NavLinkMobile>
               <LinkMobile href="#">
-                <img height="21px" src="svg/coin-light.svg" alt="Tarifs" />
+                <img height="20px" src="svg/coin-light.svg" alt="Tarifs" />
                 <p>Tarifs</p>
               </LinkMobile>
             </NavLinkMobile>
             <NavLinkMobile>
               <LinkMobile href="#">
                 <img
-                  height="21px"
+                  height="20px"
                   src="svg/comment-alt-exclamation-light.svg"
                   alt="Contact"
                 />
@@ -205,7 +205,7 @@ function NavbarMain() {
             <NavLinkMobile>
               <LinkMobile href="#">
                 <img
-                  height="21px"
+                  height="20px"
                   src="svg/pencil-light.svg"
                   alt="Pré-inscription"
                 />
@@ -215,7 +215,7 @@ function NavbarMain() {
             <NavLinkMobile>
               <LinkMobile href="#">
                 <img
-                  height="21px"
+                  height="20px"
                   src="svg/user-friends-light.svg"
                   alt="Espace Famille"
                 />

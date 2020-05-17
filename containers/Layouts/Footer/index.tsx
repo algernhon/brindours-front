@@ -77,7 +77,7 @@ const Copyright = styled.div`
   text-transform: uppercase;
   letter-spacing: 0.2em;
 
-  padding: 10px 0 70px 0;
+  padding: 10px 0 80px 0;
 
   @media (min-width: 960px) {
     padding: 10px 0;
@@ -127,7 +127,7 @@ function Footer() {
       </Center>
       <Copyright>
         Copyright {new Date().getFullYear()} © Brin d'Ours Micro Crèche -
-        Réalisé par nos soins avec ❤️
+        Réalisé avec ❤️
       </Copyright>
       <WrapperBirds
         animate={{ x: ["-20%", "100%"] }}

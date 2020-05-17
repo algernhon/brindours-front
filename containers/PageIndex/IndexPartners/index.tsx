@@ -21,8 +21,13 @@ const Title = styled.h2`
 const Partner = styled.div`
   opacity: 0.6;
   transition: opacity 1s ease 0s;
+  padding: 20px 0%;
   & :hover {
     opacity: 1;
+  }
+
+  @media (min-width: 960px) {
+    padding: 0;
   }
 `;
 

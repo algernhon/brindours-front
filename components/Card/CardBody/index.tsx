@@ -26,9 +26,12 @@ const Wrapper = styled.div<PropsType & WrapperType>`
     shadow === "light"
       ? ({ theme }) => theme.shadow.default
       : ({ theme }) => theme.shadow.darker};
-  height: calc(${({ height }) => height} - (${({ height }) => height} / 3));
+  height: calc(${({ height }) => height} - (${({ height }) => height} / 5));
   margin: 25px 40px;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
 
   & > h1,
   h2,
@@ -59,8 +62,8 @@ const Content = styled.div<ContentType>`
 // These are the different positions of the background image in the card
 const positions = {
   center: css`
-    background-position: 10% 45%;
-    background-size: 16%;
+    background-position: -40px 45%;
+    background-size: auto 70%;
     text-align: center;
     @media (min-width: 960px) {
       background-position: 45% 105%;
@@ -69,7 +72,7 @@ const positions = {
   `,
   left: css`
     background-position: -22px 50%;
-    background-size: 100px;
+    background-size: 20% auto;
     text-align: left;
     @media (min-width: 960px) {
       background-position: -10% 50%;
@@ -78,7 +81,7 @@ const positions = {
   `,
   right: css`
     background-position: 103% 50%;
-    background-size: 100px;
+    background-size: 20% auto;
     text-align: right;
     @media (min-width: 960px) {
       background-position: 103% 50%;
@@ -90,19 +93,19 @@ const positions = {
 // Inner padding depends of the background position, no overlap allowed!
 const contents = {
   center: css`
-    padding: 20px 20px 0 30%;
+    padding: 10px 10px 10px 30%;
     @media (min-width: 960px) {
       padding: 30px 20px;
     }
   `,
   left: css`
-    padding: 20px 10px 0 22%;
+    padding: 10px 10px 10px 23%;
     @media (min-width: 960px) {
       padding: 30px 20px 20px 30%;
     }
   `,
   right: css`
-    padding: 5px 22% 0 10px;
+    padding: 10px 23% 10px 10px;
     @media (min-width: 960px) {
       padding: 30px 30% 20px 20px;
     }
