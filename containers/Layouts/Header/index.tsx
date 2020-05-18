@@ -25,6 +25,14 @@ function Header({
         <meta name="robots" content="noindex" />
         <title>{title}</title>
         <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
           rel="icon"
           href="img/favicon-16x16.png"
           sizes="16x16"

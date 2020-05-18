@@ -46,7 +46,7 @@ const Link = styled.a`
   transition: all 0.4s ease 0s;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: "TextbookNew", sans-serif;
+  letter-spacing: 0.1em;
 
   @media (min-width: 1080px) {
     font-size: 14px;
@@ -61,19 +61,18 @@ const Button = styled.button`
   display: none;
 
   @media (min-width: 960px) {
-    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-    display: block;
-    padding: 12px 18px 9px 18px;
     background-color: ${({ theme }) => theme.colors.pinkDark};
-    border: none;
     border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
     color: white;
     cursor: pointer;
-    text-transform: uppercase;
+    display: block;
     font-size: 12px;
     font-weight: 600;
+    padding: 11px 18px;
+    text-transform: uppercase;
     transition: all 0.4s ease 0s;
-    text-shadow: 0 1px 3px rgba(156, 122, 130, 0.5);
 
     & :hover {
       opacity: 0.7;

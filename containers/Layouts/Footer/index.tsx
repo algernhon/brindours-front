@@ -69,13 +69,12 @@ const List = styled.ul`
 `;
 
 const Copyright = styled.div`
-  font-family: "TextbookNew", sans-serif;
   background-color: ${({ theme }) => theme.colors.greenLightDarker};
   font-size: 10px;
   margin: auto;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
 
   padding: 10px 0 80px 0;
 

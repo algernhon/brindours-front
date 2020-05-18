@@ -18,7 +18,6 @@
   "dependencies": {
     "framer-motion": "^1.10.3",
     "next": "^9.4.0",
-    "next-fonts": "^1.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.0.1"

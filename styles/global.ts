@@ -37,31 +37,14 @@ const GlobalTheme = createGlobalStyle<{ theme: ThemeType }>`
     box-sizing: border-box;
   }
 
-  @font-face {
-    font-family: 'TextbookNew';
-    src: url(/fonts/TextbookNew-Light.woff) format('woff');
-    src: url(/fonts/TextbookNew-Regular.woff) format('woff');
-  }
-
-  @font-face {
-    font-family: 'Soin';
-    src: url(/fonts/Soin-Light.otf) format('opentype');
-  }
-
-
   body {
     background: ${({ theme }) => theme.colors.defaultBG};
     color: ${({ theme }) => theme.colors.defaultText};
-    display: flex;
-    flex-direction: column;
-    font-family: 'Soin', sans-serif;
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     letter-spacing: 0.1em;
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: all 0.25s linear;
   }
 
   button,
@@ -101,18 +84,18 @@ const GlobalTheme = createGlobalStyle<{ theme: ThemeType }>`
 
   h1 {
     color: ${({ theme }) => theme.colors.green};
-    font-family: 'TextbookNew', sans-serif;
-    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
   }
 
   h2 {
     color: ${({ theme }) => theme.colors.pinkDark};
-    font-family: 'TextbookNew', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   h3 {
     color: ${({ theme }) => theme.colors.green};
-    font-family: 'TextbookNew', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 `;
 
