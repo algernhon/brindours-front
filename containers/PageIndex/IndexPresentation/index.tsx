@@ -2,7 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-  background: linear-gradient(#a9dcbc, #e9fff1, white);
+  background: linear-gradient(
+    ${({ theme }) => theme.colors.greenLightDarker},
+    ${({ theme }) => theme.colors.greenLight},
+    white
+  );
   position: absolute;
   width: 100%;
   display: grid;
@@ -24,17 +28,30 @@ const Wrapper = styled.section`
   }
 
   > :nth-child(1) {
-    background: linear-gradient(50deg, #d4fae2, #ccf0d9, rgba(0, 0, 0, 0) 50%);
+    background: linear-gradient(
+      50deg,
+      ${({ theme }) => theme.colors.greenLight},
+      rgba(0, 0, 0, 0) 50%
+    );
     grid-column: span 3;
   }
 
   > :nth-child(2) {
-    background: linear-gradient(230deg, #a9dcbc, rgba(0, 0, 0, 0) 70%);
+    background: linear-gradient(
+      230deg,
+      ${({ theme }) => theme.colors.greenLightDarker},
+      rgba(0, 0, 0, 0) 70%
+    );
     grid-area: 3 / span 3 / auto / -1;
   }
 
   > :nth-child(3) {
-    background: linear-gradient(200deg, #ccf0d9, #e1faea, white 70%);
+    background: linear-gradient(
+      200deg,
+      ${({ theme }) => theme.colors.greenLightDarker},
+      ${({ theme }) => theme.colors.greenLight},
+      white 70%
+    );
     grid-row: 4;
     grid-column: span 10;
   }

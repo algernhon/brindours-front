@@ -11,6 +11,7 @@ export interface ThemeType {
     defaultBG: string;
     defaultText: string;
     greenLight: string;
+    greenLightTransition: string;
     greenLightDarker: string;
     green: string;
     pinkDark: string;
@@ -43,6 +44,7 @@ const GlobalTheme = createGlobalStyle<{ theme: ThemeType }>`
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     letter-spacing: 0.1em;
+
     margin: 0;
     padding: 0;
   }

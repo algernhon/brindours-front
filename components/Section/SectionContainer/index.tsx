@@ -8,6 +8,7 @@ interface PropsType {
 
 const Container = styled.section`
   margin-bottom: ${({ theme }) => theme.sizes.separator};
+  line-height: 24px;
 `;
 
 function SectionContainer({ children, className }: PropsType) {

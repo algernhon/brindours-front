@@ -4,7 +4,8 @@ import Header from "./IndexHeader";
 import Partners from "./IndexPartners";
 import Presentation from "./IndexPresentation";
 import MainInfo from "./IndexMainInfo";
-import Ouverture from "./IndexOuverture";
+import Open from "./IndexOpen";
+import Info from "./IndexInfo";
 
 export default {
   Contact,
@@ -13,5 +14,6 @@ export default {
   Partners,
   Presentation,
   MainInfo,
-  Ouverture,
+  Open,
+  Info,
 };

@@ -42,8 +42,8 @@ const Background = styled.div`
     grid-row: 1;
     background: linear-gradient(
       200deg,
-      rgba(211, 228, 214, 0.4) 0%,
-      rgba(211, 228, 214, 0.2) 100%
+      ${({ theme }) => theme.colors.greenLightTransition} 0%,
+      ${({ theme }) => theme.colors.greenLight} 100%
     );
   }
 
@@ -52,8 +52,8 @@ const Background = styled.div`
     grid-row: 2;
     background: linear-gradient(
       200deg,
-      rgba(211, 228, 214, 0.4) 0%,
-      rgba(211, 228, 214, 0.2) 100%
+      ${({ theme }) => theme.colors.greenLightTransition} 0%,
+      ${({ theme }) => theme.colors.greenLight} 100%
     );
   }
 
@@ -62,8 +62,8 @@ const Background = styled.div`
     grid-row: 3;
     background: linear-gradient(
       200deg,
-      rgba(211, 228, 214, 0.4) 0%,
-      rgba(211, 228, 214, 0.2) 100%
+      ${({ theme }) => theme.colors.greenLightTransition} 0%,
+      ${({ theme }) => theme.colors.greenLight} 100%
     );
   }
 
@@ -72,8 +72,8 @@ const Background = styled.div`
     grid-row: 1;
     background: linear-gradient(
       200deg,
-      rgba(211, 228, 214, 0.4) 0%,
-      rgba(211, 228, 214, 0.2) 100%
+      ${({ theme }) => theme.colors.greenLightTransition} 0%,
+      ${({ theme }) => theme.colors.greenLight} 100%
     );
   }
 
@@ -82,8 +82,8 @@ const Background = styled.div`
     grid-row: 3;
     background: linear-gradient(
       200deg,
-      rgba(211, 228, 214, 0.4) 0%,
-      rgba(211, 228, 214, 0.2) 100%
+      ${({ theme }) => theme.colors.greenLightTransition} 0%,
+      ${({ theme }) => theme.colors.greenLight} 100%
     );
   }
 `;
@@ -93,7 +93,7 @@ const ButtonWrapper = styled.div`
   justify-content: center;
 `;
 
-function IndexOuverture() {
+function IndexOpen() {
   return (
     <Container>
       <Background>
@@ -119,4 +119,4 @@ function IndexOuverture() {
   );
 }
 
-export default IndexOuverture;
+export default IndexOpen;
