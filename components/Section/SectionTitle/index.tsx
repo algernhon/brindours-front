@@ -28,7 +28,7 @@ const Title = styled.h2`
 
 const IconCircle = styled.div`
   border: 2px solid ${({ theme }) => theme.colors.pinkDark};
-  border-radius: 40px;
+  border-radius: 50px;
   padding: 0.4em 0.6em;
   height: 80px;
   width: 80px;
@@ -38,7 +38,7 @@ const IconCircle = styled.div`
   justify-content: center;
 
   img {
-    width: 50px;
+    width: 45px;
     user-select: none;
   }
 `;

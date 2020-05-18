@@ -23,7 +23,7 @@ function IndexInfo() {
     <Section.Container>
       <Center>
         <InfoBlock>
-          <Title image="svg/handshake-duotone.svg" position="left">
+          <Title image="svg/baby.svg" position="left">
             Juste 10 places
           </Title>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra
@@ -35,7 +35,7 @@ function IndexInfo() {
           Vivamus at tellus id lacus euismod malesuada a sit amet ipsum.
         </InfoBlock>
         <InfoBlock>
-          <Title image="svg/handshake-duotone.svg" position="left">
+          <Title image="svg/home.svg" position="left">
             A CrècheVille
           </Title>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra
@@ -47,7 +47,7 @@ function IndexInfo() {
           Vivamus at tellus id lacus euismod malesuada a sit amet ipsum.
         </InfoBlock>
         <InfoBlock>
-          <Title image="svg/handshake-duotone.svg" position="left">
+          <Title image="svg/leaf.svg" position="left">
             Eco-responsable
           </Title>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra
