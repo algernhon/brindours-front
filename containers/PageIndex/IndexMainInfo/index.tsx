@@ -3,7 +3,7 @@ import Section from "components/Section";
 
 const Fond = styled(Section.Container)`
   position: relative;
-  padding-top: 90px;
+  padding-top: 60px;
 `;
 
 const Center = styled(Section.Center)`
@@ -45,7 +45,6 @@ const ImageSvg = styled.img`
 
 const Background = styled.div`
   z-index: 0;
-  background: ${({ theme }) => theme.colors.greenLight};
   top: 0;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -62,6 +61,16 @@ const Background = styled.div`
   }
 
   & > span :nth-child(2) {
+    grid-column: 6;
+    grid-row: 2;
+    background: linear-gradient(
+      210deg,
+      rgba(224, 238, 226, 1) 0%,
+      rgba(242, 251, 244, 1) 80%
+    );
+  }
+
+  & > span :nth-child(3) {
     grid-column: span 2;
     grid-row: 1;
     background: linear-gradient(
@@ -71,7 +80,7 @@ const Background = styled.div`
     );
   }
 
-  & > span :nth-child(3) {
+  & > span :nth-child(4) {
     grid-column: 1;
     grid-row: 4;
     background: linear-gradient(
@@ -81,8 +90,8 @@ const Background = styled.div`
     );
   }
 
-  & > span :nth-child(4) {
-    grid-column: span 2;
+  & > span :nth-child(5) {
+    grid-column: span 3;
     grid-row: 5;
     background: linear-gradient(
       40deg,
@@ -96,6 +105,7 @@ function IndexMainInfo() {
   return (
     <Fond>
       <Background>
+        <span></span>
         <span></span>
         <span></span>
         <span></span>

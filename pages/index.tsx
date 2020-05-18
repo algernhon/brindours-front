@@ -9,6 +9,7 @@ function Index() {
     <LayoutDefault>
       <PageIndex.Presentation />
       <PageIndex.Header />
+      <PageIndex.Ouverture />
       <PageIndex.FirstInfo />
       <PageIndex.MainInfo />
       <PageIndex.Partners />
