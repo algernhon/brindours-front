@@ -1,5 +1,7 @@
-import React, { Children } from "react";
+import React, { useEffect } from "react";
 import styled, { css } from "styled-components";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 
 export interface PropsType {
   className?: string;
@@ -21,24 +23,20 @@ const Flexbox = styled.div<FlexboxType>`
   flex-direction: column;
 `;
 
-const Title = styled.h2`
+const Title = styled(motion.h2)`
   display: inline-block;
-  margin-top: 25px;
 `;
 
-const IconCircle = styled.div`
-  border: 2px solid ${({ theme }) => theme.colors.pinkDark};
-  border-radius: 50px;
-  padding: 0.4em 0.6em;
-  height: 80px;
-  width: 80px;
+const IconCircle = styled(motion.div)`
+  height: 60px;
+  width: 60px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   img {
-    width: 45px;
+    width: 55px;
     user-select: none;
   }
 `;
@@ -61,13 +59,40 @@ function SectionTitle({
   image,
   position = "center",
 }: PropsType) {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 1 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <Wrapper className={className}>
       <Flexbox position={position}>
-        <IconCircle>
+        <IconCircle
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={{
+            visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+            hidden: { opacity: 0, y: 30 },
+          }}
+        >
           <img src={image} />
         </IconCircle>
-        <Title>{children}</Title>
+        <Title
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={{
+            visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+            hidden: { opacity: 0, y: 50 },
+          }}
+        >
+          {children}
+        </Title>
       </Flexbox>
     </Wrapper>
   );

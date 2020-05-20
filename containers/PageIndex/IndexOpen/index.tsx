@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 import Section from "components/Section";
 import Button from "components/Button";
@@ -97,11 +98,26 @@ function IndexOpen() {
   return (
     <Container>
       <Background>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <motion.span
+          animate={{ x: 30 }}
+          transition={{ duration: 4, yoyo: Infinity, ease: "easeInOut" }}
+        ></motion.span>
+        <motion.span
+          animate={{ x: -70 }}
+          transition={{ duration: 4, yoyo: Infinity, ease: "easeInOut" }}
+        ></motion.span>
+        <motion.span
+          animate={{ x: -60 }}
+          transition={{ duration: 4.5, yoyo: Infinity, ease: "easeInOut" }}
+        ></motion.span>
+        <motion.span
+          animate={{ x: -50 }}
+          transition={{ duration: 5, yoyo: Infinity, ease: "easeInOut" }}
+        ></motion.span>
+        <motion.span
+          animate={{ x: 40 }}
+          transition={{ duration: 3.5, yoyo: Infinity, ease: "easeInOut" }}
+        ></motion.span>
       </Background>
       <Center>
         <h2>La structure est actuellement fermée</h2>

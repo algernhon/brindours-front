@@ -11,7 +11,7 @@ function Index() {
       <PageIndex.Header />
       <PageIndex.Info />
       <PageIndex.Open />
-      <PageIndex.FirstInfo />
+      <PageIndex.Info />
       <PageIndex.MainInfo />
       <PageIndex.Partners />
       <PageIndex.Contact />
