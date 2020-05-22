@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Wrapper = styled.section`
   background: linear-gradient(
@@ -67,10 +68,48 @@ const Wrapper = styled.section`
 function IndexPresentation() {
   return (
     <Wrapper aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <motion.span
+        animate={{
+          opacity: 0,
+        }}
+        transition={{
+          yoyo: Infinity,
+          ease: "linear",
+          duration: 2,
+        }}
+      ></motion.span>
+      <motion.span
+        animate={{
+          opacity: 0,
+        }}
+        transition={{
+          yoyo: Infinity,
+          ease: "linear",
+          duration: 3,
+        }}
+      ></motion.span>
+      <motion.span
+        animate={{
+          opacity: 0,
+        }}
+        transition={{
+          yoyo: Infinity,
+          ease: "linear",
+          duration: 3,
+          delay: 2,
+        }}
+      ></motion.span>
+      <motion.span
+        animate={{
+          opacity: 0,
+        }}
+        transition={{
+          yoyo: Infinity,
+          ease: "linear",
+          duration: 2,
+          delay: 3,
+        }}
+      ></motion.span>
       <span></span>
     </Wrapper>
   );

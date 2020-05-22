@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 const Header = styled.header`
   align-items: center;
@@ -10,6 +11,11 @@ const Header = styled.header`
   max-width: ${({ theme }) => theme.sizes.widthDefault};
   padding: 20px 10px;
   position: static;
+`;
+
+const Position = styled.div`
+  position: relative;
+  z-index: 100;
 `;
 
 const Logo = styled.img`
@@ -42,7 +48,7 @@ const NavLink = styled.li`
   padding: 0 15px;
 `;
 
-const Link = styled.a`
+const LinkStyled = styled.span`
   transition: all 0.4s ease 0s;
   text-transform: uppercase;
   font-size: 12px;
@@ -121,7 +127,7 @@ const NavLinkMobile = styled.div`
   }
 `;
 
-const LinkMobile = styled.a`
+const LinkMobile = styled.span`
   font-size: 11px;
   color: black;
   transition: all 0.4s ease 0s;
@@ -140,91 +146,139 @@ const LinkMobile = styled.a`
 // This is the default navbar of the website
 function NavbarMain() {
   return (
-    <>
+    <Position>
       <Header>
-        <Logo src="/img/logo-header.png" alt="Logo Brin D'ours" />
+        <Link href="/">
+          <a>
+            <Logo src="/img/logo-header.png" alt="Logo Brin D'ours" />
+          </a>
+        </Link>
         <nav>
           <NavList>
             <NavLink>
-              <Link href="#">Notre concept</Link>
+              <LinkStyled>
+                <Link href="/concept">
+                  <a>Notre concept</a>
+                </Link>
+              </LinkStyled>
             </NavLink>
             <NavLink>
-              <Link href="#">L'équipe</Link>
+              <LinkStyled>
+                <Link href="/equipe">
+                  <a>L'équipe</a>
+                </Link>
+              </LinkStyled>
             </NavLink>
             <NavLink>
-              <Link href="#">Tarifs</Link>
+              <LinkStyled>
+                <Link href="/tarifs">
+                  <a>Tarifs</a>
+                </Link>
+              </LinkStyled>
             </NavLink>
             <NavLink>
-              <Link href="#">Contact</Link>
+              <LinkStyled>
+                <Link href="/contact">
+                  <a>Contact</a>
+                </Link>
+              </LinkStyled>
             </NavLink>
             <NavLink>
-              <Link href="#">Pré-inscription</Link>
+              <LinkStyled>
+                <Link href="/pre-inscription">
+                  <a>Pré-inscription</a>
+                </Link>
+              </LinkStyled>
             </NavLink>
           </NavList>
         </nav>
-        <a href="#">
+        <Link href="/espace-famille">
           <Button>Espace Famille</Button>
-        </a>
+        </Link>
       </Header>
       <HeaderMobile>
         <nav>
           <NavListMobile>
             <NavLinkMobile>
-              <LinkMobile href="#">
-                <img height="20px" src="svg/baby-light.svg" alt="Concept" />
-                <p>Concept</p>
+              <LinkMobile>
+                <Link href="/concept">
+                  <a>
+                    <img height="20px" src="svg/baby-light.svg" alt="Concept" />
+                    <p>Concept</p>
+                  </a>
+                </Link>
               </LinkMobile>
             </NavLinkMobile>
             <NavLinkMobile>
-              <LinkMobile href="#">
-                <img
-                  height="20px"
-                  src="svg/hands-helping-light.svg"
-                  alt="L'équipe"
-                />
-                <p>L'équipe</p>
+              <LinkMobile>
+                <Link href="/equipe">
+                  <a>
+                    <img
+                      height="20px"
+                      src="svg/hands-helping-light.svg"
+                      alt="L'équipe"
+                    />
+                    <p>L'équipe</p>
+                  </a>
+                </Link>
               </LinkMobile>
             </NavLinkMobile>
             <NavLinkMobile>
-              <LinkMobile href="#">
-                <img height="20px" src="svg/coin-light.svg" alt="Tarifs" />
-                <p>Tarifs</p>
+              <LinkMobile>
+                <Link href="/tarifs">
+                  <a>
+                    <img height="20px" src="svg/coin-light.svg" alt="Tarifs" />
+                    <p>Tarifs</p>
+                  </a>
+                </Link>
               </LinkMobile>
             </NavLinkMobile>
             <NavLinkMobile>
-              <LinkMobile href="#">
-                <img
-                  height="20px"
-                  src="svg/comment-alt-exclamation-light.svg"
-                  alt="Contact"
-                />
-                <p>Contact</p>
+              <LinkMobile>
+                <Link href="/contact">
+                  <a>
+                    <img
+                      height="20px"
+                      src="svg/comment-alt-exclamation-light.svg"
+                      alt="Contact"
+                    />
+                    <p>Contact</p>
+                  </a>
+                </Link>
               </LinkMobile>
             </NavLinkMobile>
             <NavLinkMobile>
-              <LinkMobile href="#">
-                <img
-                  height="20px"
-                  src="svg/pencil-light.svg"
-                  alt="Pré-inscription"
-                />
-                <p>Pré-inscription</p>
+              <LinkMobile>
+                <Link href="/pre-inscription">
+                  <a>
+                    <img
+                      height="20px"
+                      src="svg/pencil-light.svg"
+                      alt="Pré-inscription"
+                    />
+                    <p>Pré-inscription</p>
+                  </a>
+                </Link>
               </LinkMobile>
             </NavLinkMobile>
             <NavLinkMobile>
-              <LinkMobile href="#">
-                <img
-                  height="20px"
-                  src="svg/user-friends-light.svg"
-                  alt="Espace Famille"
-                />
-                <p>Espace Famille</p>
+              <LinkMobile>
+                <Link href="/espace-famille">
+                  <a>
+                    <img
+                      height="20px"
+                      src="svg/user-friends-light.svg"
+                      alt="Espace Famille"
+                    />
+                    <p>Espace Famille</p>
+                  </a>
+                </Link>
               </LinkMobile>
             </NavLinkMobile>
           </NavListMobile>
         </nav>
       </HeaderMobile>
-    </>
+    </Position>
   );
 }
 

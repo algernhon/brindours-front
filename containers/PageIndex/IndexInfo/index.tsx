@@ -5,13 +5,22 @@ import Section from "components/Section";
 
 const Center = styled(Section.Center)`
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 960px) {
+    flex-direction: row;
+  }
 `;
 
 const InfoBlock = styled.div`
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 0 30px;
+  padding: 0 30px 40px 30px;
+
+  @media (min-width: 960px) {
+    padding: 0 30px;
+  }
 `;
 
 const Title = styled(Section.Title)`
@@ -24,7 +33,7 @@ function IndexInfo() {
       <Center>
         <InfoBlock>
           <Title image="svg/baby.svg" position="left">
-            Juste 10 places
+            Seulement 10 places
           </Title>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra
           sem et sem condimentum, eu pellentesque purus volutpat. Sed sit amet
